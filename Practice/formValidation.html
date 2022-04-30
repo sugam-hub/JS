@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="formValidation.css">
+</head>
+<body>
+    <fieldset>
+    <h1>Registration Form</h1>
+    <div class="container">
+
+            <form action="">
+                <div class="form">
+                    
+                <label for="fullname">Full Name</label>
+                <input type="text" name="firstname"  placeholder="First Name">
+                <input type="text" name="lastname"  placeholder="Last Name"> <br>
+                
+                <label for="company">Company</label>
+                <input type="text" name="company" id="" placeholder="Your company name"><br>
+                
+                <label for="email">Email</label>
+                <input type="email" name="email" id="" placeholder="email@example.com"><br>
+                
+                <label for="phonenumber">Phone number</label>
+                <input type="text" name="phonenumber" id="" size="4" maxlength="4" placeholder="+xxx">
+                <input type="text" name="phonenumber" id="" size="10" maxlength="10" placeholder="98xxxxxxxx"><br>
+                
+                <label for="country">Country</label>
+                <select name="country" id="">
+                    <option value="" disabled selected>Click to choose</option>
+                    <option value="nepal">Nepal</option>
+                    <option value="usa">USA</option>
+                    <option value="uk">UK</option>
+                    <option value="australia">Australia</option>
+                </select><br>
+                
+                <label for="sex">Sex</label>
+                <input type="radio" name="sex" id="">Male
+                <input type="radio" name="sex" id="">Female <br>
+                
+                <label for="language">Language</label>
+                <input type="checkbox" name="nepali" value="nepali" id="">Nepali
+                <input type="checkbox" name="sanskrit" value="sanskrit" id="">Sanskrit
+                <input type="checkbox" name="other" value="other" id="">Other <br>
+            
+                <label for="comment">Comment</label>
+                <input type="textarea" name="comment" id="" placeholder="Say hello"><br>
+            
+                <input type="checkbox" name="" id="">I agree with Terms and Condition <br>
+                <button type="submit">Register</button>
+                
+        </div>
+        </form>
+    </div>
+</fieldset>
+</body>
+</html>
