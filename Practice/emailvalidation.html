@@ -1,0 +1,41 @@
+<script>
+
+    const email_validator = (email) => {
+        let emailValue = email
+        let atIndex = emailValue.indexOf('@');
+        let dotIndex = emailValue.lastIndexOf(".");
+        if (atIndex < 1 || dotIndex >= (emailValue.length - 2) || (dotIndex - atIndex) < 3) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+    const validate_form = () => {
+        let fname = document.querySelector("#first_name");
+        let lname = document.querySelector("#last_name");
+        let company = document.querySelector("#company");
+        let email = document.querySelector("#email");
+        let country_code = document.querySelector("#country_code");
+        let phone = document.querySelector("#phone");
+        let country = document.querySelector("#country");
+        let sex = document.getElementsByName("gender");
+        let language = document.getElementsByName("language");
+        let comment = document.querySelector("#comment");
+        let accept_terms = document.querySelector("#accept_terms");
+
+        let flag = true;
+
+        if (fname.value.length < 5)
+            flag = false;
+        return flag;
+        if (lname.value.length < 5)
+            flag = false;
+        return flag;
+        if (company.value.length < 5)
+            flag = false;
+        if (!email_validator(company.value.length))
+            flag = false;
+        return flag;
+
+    }
+</script>
